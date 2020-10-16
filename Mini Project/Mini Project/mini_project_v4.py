@@ -138,9 +138,11 @@ def binary_system(body1,body2):
         small.rotate(angle = small.angle, axis = small.axis)
         
 if __name__ == "__main__":
-    body1 = body(vector(0,0,0),2e10,2e30,"https://i.imgur.com/ejXbe1E.jpg")
-    body2 = body(vector(1.5e11,0,0),1e10,6e24,"https://i.imgur.com/dl1sA.jpg",angle = 0.4, axis= vector(1,1,math.cos(23.5)))
-    binary_system(body1,body2)
+    pass
+    #Example of earth-sun system right below
+    #body1 = body(vector(0,0,0),2e10,2e30,"https://i.imgur.com/ejXbe1E.jpg")
+    #body2 = body(vector(1.5e11,0,0),1e10,6e24,"https://i.imgur.com/dl1sA.jpg",angle = 0.4, axis= vector(1,1,math.cos(23.5)))
+    #binary_system(body1,body2)
 
         
     
