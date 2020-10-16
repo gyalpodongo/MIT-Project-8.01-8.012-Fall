@@ -1,8 +1,8 @@
 """
-The purpose of this mini project forto show the orbit of to objects in a
-bynary system using Newton's Gravitational Law, Conservation of Momentum and
-Newton's 2nd Law. The visualization will be produced using the different 
-features of vpython.
+The purpose of this mini project for ES 8.01/8.012 is to show the orbit of 
+two objects in a bynary system using Newton's Gravitational Law, Conservation of
+Momentum and Newton's 2nd Law. The visualization will be produced using the 
+different features of vpython.
 """
 
 
