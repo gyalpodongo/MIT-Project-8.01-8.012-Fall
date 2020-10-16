@@ -1,13 +1,12 @@
 """
 The purpose of this mini project for ES 8.01/8.012 is to show the orbit of 
-two objects in a bynary system using Newton's Gravitational Law, Conservation of
-Momentum and Newton's 2nd Law. The visualization will be produced using the 
+two objects in a bynary system using Newton's Gravitational Law, Conservation 
+of Momentum and Newton's 2nd Law. The visualization will be produced using the 
 different features of vpython.
 """
 
-
-
 from vpython import *
+import math
 
 def body(position,rad,mass,texture = False, angle = 0.01,axis = vector(0,1,0)):
     """ 
@@ -140,9 +139,8 @@ def binary_system(body1,body2):
         
 if __name__ == "__main__":
     body1 = body(vector(0,0,0),2e10,2e30,"https://i.imgur.com/ejXbe1E.jpg")
-    body2 = body(vector(1.5e11,0,0),1e10,6e24,"https://i.imgur.com/dl1sA.jpg",angle = 0.4)
+    body2 = body(vector(1.5e11,0,0),1e10,6e24,"https://i.imgur.com/dl1sA.jpg",angle = 0.4, axis= vector(1,1,math.cos(23.5)))
     binary_system(body1,body2)
-    
 
         
     
