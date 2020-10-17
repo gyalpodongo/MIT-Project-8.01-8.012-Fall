@@ -17,7 +17,7 @@ def body(position: "vector",rad: "metres",mass: "kg", texture= False, angle= 0.0
         chosen as long as magintude of radius coincide.
         
         radius = Radius of body in metres. Due to the limitations of showing
-        the actual sizes between for example the sun and the earth and fitting
+        the actual sizes between, e.g. the sun and the earth, and fitting
         them in a screen, after experimentation, it has been found that it is
         better to choose a radius of 1 smaller order of magnitude than the
         order of magnitudes in the position rather than the actual radius of 
