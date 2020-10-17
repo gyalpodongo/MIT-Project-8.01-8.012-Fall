@@ -3,6 +3,10 @@ The purpose of this mini project for ES 8.01/8.012 is to show the orbit of
 two objects in a bynary system using Newton's Gravitational Law, Conservation 
 of Momentum and Newton's 2nd Law. The visualization will be produced using the 
 different features of vpython.
+
+Before running the code, in the command prompt for python/anaconda type: 
+pip install vpython
+so that the code works and can use the vpython package.
 """
 
 from vpython import *
