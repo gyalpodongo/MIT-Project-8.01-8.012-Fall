@@ -8,7 +8,7 @@ different features of vpython.
 from vpython import *
 import math
 
-def body(position: "vector",rad: "metres",mass: "kg", texture= False, angle= 0.01,axis= vector(0,1,0)):
+def body(position: "vector",rad: "metres",mass: "kg", texture= False, angle= 0.01,axis= vector(0,1,0)) -> "body":
     """ 
         This function returns a body which could be a planet, star or asteroid.
     
@@ -127,14 +127,13 @@ def binary_system(body1,body2):
         #the other one has to decrease by the same amount.
         small.momentum -= F*dt
         #the respective position of each also changes as they get new momentum
-        #therefore we can change their position using the simple dx = v*dt
-        #in this case where the new v is given by dividing the new momentum
-        #by the mass of the body and multiplying it by how long this occurs 
-        #which is dt.
+        #therefore we can change their position using dx = v*dt, in this case 
+        #where the new v is given by dividing the new momentum by the mass
+        #of the body and multiplying it by how long this occurs which is dt.
         big.pos += (big.momentum/big.mass)*dt
         small.pos += (small.momentum/small.mass)*dt
         #Finally using the rotate() function with original attributes of angle
-        #and axis, we can make the bodies rotate.
+        #and axis from each body, we can make the bodies rotate.
         big.rotate(angle = big.angle, axis = big.axis)
         small.rotate(angle = small.angle, axis = small.axis)
         
