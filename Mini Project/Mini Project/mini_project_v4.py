@@ -78,7 +78,8 @@ def binary_system(body1,body2):
     initial_velocity = vector(0,0,1e4)
     #We stil need to resolve some of the physics behind this velocity, but
     #initally for a system of masses 2e30 and 1e30, this was the intial
-    #velocity, later on the code using some ratios respect to the original
+    #velocity of the bigger mass and we know the code worked with this conditions, 
+    #so later in the code, using some ratios respect to the original
     #2e30 and 1e30 masses compared to the input ones and by multiplying them
     #to this velocity, we can create a new initial velocity which would
     #work for any masses we choose for the bodies.
