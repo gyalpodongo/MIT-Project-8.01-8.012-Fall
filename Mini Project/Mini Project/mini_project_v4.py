@@ -72,6 +72,7 @@ def binary_system(body1,body2):
     """
     scene.forward = vector(0,-.3,-1)
     #This will be the intial viewpoint from which we will see the scene.
+    
     G = 6.7e-11
     
     initial_velocity = vector(0,0,1e4)
@@ -81,8 +82,6 @@ def binary_system(body1,body2):
     #2e30 and 1e30 masses compared to the input ones and by multiplying them
     #to this velocity, we can create a new initial velocity which would
     #work for any masses we choose for the bodies.
-    
-    
     
     dt = 1e5
     #dt represents the difference in time that occurs for each impulse to be
