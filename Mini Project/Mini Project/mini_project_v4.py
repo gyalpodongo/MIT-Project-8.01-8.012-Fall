@@ -20,7 +20,8 @@ def body(position,rad,mass,texture = False, angle = 0.01,axis = vector(0,1,0)):
         the actual sizes between for example the sun and the earth and fitting
         them in a screen, after experimentation, it has been found that it is
         better to choose a radius of 1 smaller order of magnitude than the
-        order of magnitudes in the position.
+        order of magnitudes in the position rather than the actual radius of 
+        the two bodies.
         
         mass = Mass of boody in kilograms.
         
