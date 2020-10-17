@@ -8,9 +8,9 @@ different features of vpython.
 from vpython import *
 import math
 
-def body(position,rad,mass,texture = False, angle = 0.01,axis = vector(0,1,0)):
+def body(position: "vector",rad: "metres",mass: "kg", texture= False, angle= 0.01,axis= vector(0,1,0)):
     """ 
-        This function returns a body which could be a planet,star or asteroid.
+        This function returns a body which could be a planet, star or asteroid.
     
         position =  A vector which represents the position of the body in our
         coordinate system in metres, this normally can be arbitrarily
@@ -67,7 +67,7 @@ def binary_system(body1,body2):
         The position and the respective distances between the two bodies are
         also constantly changing due to the infiinite while loop.
 
-        The function will end up producing an scenarion where both bodies are
+        The function will end up producing an scenario where both bodies are
         in a binary system orbiting around the center of mass of the system.
     """
     scene.forward = vector(0,-.3,-1)
