@@ -35,9 +35,9 @@ def body(position,rad,mass,texture = False, angle = 0.01,axis = vector(0,1,0)):
         axis =  A vector which by default is (0,1,0) and represents the axis
         of rotation of the body.
         
-        Using the class sphere(), this functions adds a new attribute mass
-        angle and axis and sets some initial conditions too such as make_trail,
-        interval, etc.
+        Using the class sphere(), this function adds new attributes to this
+        this class such as mass,angle and axis and sets some default conditions 
+        too such as make_trail, interval, etc.
     """
     
     body = sphere(pos= position, radius= rad, make_trail = True,trail_type='points', interval=10, retain=10)
