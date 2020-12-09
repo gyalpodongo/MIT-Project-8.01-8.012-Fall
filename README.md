@@ -1,1 +1,1 @@
-# MIT-Project-8.01-8.012-Fall
+G-Lab, an interactive website to learn about gravity in an intuitive and visual way!
