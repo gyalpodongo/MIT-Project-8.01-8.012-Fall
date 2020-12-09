@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>G-Lab 2nd Problem</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<header id="header">
+									<h1><a href="index.html" id="logo">G-Lab</a></h1>
+									<nav id="nav">
+										<a href="index.html">Homepage</a>
+										<a href="first_problem.html">Stage One</a>
+										<a href="second_problem.html" class = "current-page-item">Stage Two</a>
+										<a href="third_problem.html">Stage Three</a> 
+									</nav>
+								</header>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="container">
+					<div class="row main-row">
+						<div class="col-12">
+
+							<section>
+								<h2>Getting off Earth's surface</h2>
+								<p>Now let’s think about leaving the Earth. How can a rocket get off the Earth’s surface?</p>
+								<p align="center">
+									<label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+										<span class="mdc-text-field__ripple"></span>
+										<input class="mdc-text-field__input" type="text" id="rocketQuestionGuess" placeholder="Your guess" aria-label="Label">
+										<span class="mdc-line-ripple"></span>
+									</label>
+
+									<div class="mdc-touch-target-wrapper" id="rocketQuestionButton" onclick="QuestionGuessSubmit()">
+										<button class="mdc-button mdc-button--touch">
+										  <div class="mdc-button__ripple"></div>
+										  <span class="mdc-button__label">Check your answer</span>
+										  <div class="mdc-button__touch"></div>
+										</button>
+									  </div>
+									</p>
+
+									<p id="rocketQuestionAnswer" style="display: none;">
+										<em>
+											Basically, as long as the rocket is pushing off the ground more than gravity is pulling it back down, it will be able to take off. (This same logic can also be applied to an airplane taking off - however, because the airplane stays within the Earth’s atmosphere it doesn’t need as much of a push.) 
+											<p>
+												<br> 
+											</p>
+										<p align = "center">
+											<img src="images/escapevelocityvis.JPG" alt="Image of Escape Velocity" width="600" height="200">
+										</p>	
+										
+									</em></p>
+									<script>
+										if (localStorage.getItem("rocketQuestionGuess")!=undefined){
+											document.getElementById("rocketQuestionGuess").value=localStorage.getItem("rocketQuestionGuess");
+											document.getElementById("rocketQuestionButton").style.display="none";
+											document.getElementById("rocketQuestionAnswer").style.display="";
+										}
+										var QuestionGuessSubmit=function(){
+											localStorage.setItem("rocketQuestionGuess",document.getElementById("rocketQuestionGuess").value);
+											document.getElementById("rocketQuestionButton").style.display="none";
+											document.getElementById("rocketQuestionAnswer").style.display="";
+										}
+									</script>
+
+									
+							</section>
+
+						</div>
+						<div class="col-12">
+
+							<article class="blog-post">
+								<footer class="controls">
+								<p align = "center">
+									<a href="third_problem.html" class="button">Next Stage</a>
+								</p>
+								</footer>
+							</article>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-12-medium">
+
+						<section>
+							<h2>Learn more:</h2>
+							<div>
+									<div class="col-3 col-6-medium col-12-small">
+										<ul class="link-list">
+											<li><a href="https://github.com/gyalpodongo/g_lab">Explore our code!</a></li>
+											<li><a href="https://docs.google.com/presentation/d/1v66o4QSOBBBSg30FW5lHExIMmH-7qpxEjDTDOKjSoVQ/edit?usp=sharing">Learn about the process of making this website!</a></li>
+											<li><a href="https://docs.google.com/document/d/1f51Ct1F28u2xdaaIkJ94PHW9krX6A_PtGw8prv6ldiQ/edit?usp=sharing">Share this document that gives an overview of the website!</a></li>
+										</ul>
+									</div>
+									
+							</div>
+						</section>
+
+					</div>
+					<div class="col-8 col-12-medium">
+
+						<section>
+							<h2>About the creators</h2>
+							<p>
+								Franck Belemkoabga (fnbelemk@mit.edu), Gyalpo Dongo-Aguirre (gyalpo@mit.edu), and Ariel Mobius (amobius@mit.edu) are MIT freshmen who are really passionate about astronomy, coding, and making the world a better place! We hope you enjoy this website. Please feel free to let us know if you have any ideas for improvement!
+							</p>
+							
+						</section>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
